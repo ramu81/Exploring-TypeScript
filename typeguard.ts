@@ -6,24 +6,25 @@ class Y {
 func(){ console.log('Y.func() called...'); }
 }
 
-const recive = function(value: number|string|X|Y): any {
+const recive = function(value: string|X|Y): any {
 	
-	console.log('value :  '+value );
+	( <string> value ).length;
 	
-	if(typeof(value) === 'string' ) {
-	console.log('value length : '+value .length);
-	}
+	//( <X> value ).foo();
+	//( <Y> value ).func();
 	
-	if(value instanceof X ) {
+	if(typeof(value) === 'string' ) 
+		console.log('value length : '+value .length);
+	
+	
+	if(value instanceof X ) 
 		value.foo();
-	}
+	
 
-	if(value instanceof Y ) {
+	if(value instanceof Y ) 
 		value.func();
-	}
+	
 }
-
-recive(1);
 
 recive('xyz');
 
