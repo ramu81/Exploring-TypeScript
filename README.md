@@ -6,5 +6,4 @@
        # How to access specific methods? 
        # typeof   
        # instanceof
-       # multiple type of assertions
        # type guards 
