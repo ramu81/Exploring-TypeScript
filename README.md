@@ -14,7 +14,7 @@
       #  enum
       #  const enums
       #  JavaScript Object
-  #  Classes
+  #  Classes (Greeter.ts) (Greeter.js)
       # Introduction  
          Traditional JavaScript uses functions and prototype-based inheritance to build up reusable components, 
          where classes inherit functionality and objects are built from these classes. Starting with ECMAScript 2015,
