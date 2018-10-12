@@ -31,3 +31,12 @@
          In the last line we construct an instance of the Greeter class using new. 
          This calls into the constructor we defined earlier, creating a new object with the Greeter shape, 
          and running the constructor to initialize it.
+         
+  #  Inheritance (Inheritance.ts)
+           In TypeScript, we can use common object-oriented patterns. One of the most fundamental patterns in 
+         class-based programming is being able to extend existing classes to create new ones using inheritance.
+         
+           Inheritance.ts i.e., This example shows the most basic inheritance feature: classes inherit properties 
+         and methods from base classes. Here, Dog is a derived class that derives from the Animal base class 
+         using the extends keyword. Derived classes are often called subclasses, and base classes are often called superclasses.
+         
