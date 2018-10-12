@@ -38,5 +38,9 @@
          
            Inheritance.ts i.e., This example shows the most basic inheritance feature: classes inherit properties 
          and methods from base classes. Here, Dog is a derived class that derives from the Animal base class 
-         using the extends keyword. Derived classes are often called subclasses, and base classes are often called superclasses.
+         using the extends keyword. Derived classes are often called subclasses, 
+         and base classes are often called superclasses.
+         
+            Because Dog extends the functionality from Animal, we were able to create an instance of Dog that 
+         could both bark() and move().
          
