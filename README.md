@@ -4,6 +4,10 @@
     regardless of where they came from, if the types of all members are compatible, 
     then we say the types themselves are compatible
     
+    -> var declarations are accessible anywhere within their containing function, module, namespace, 
+    or global scope - all which we’ll go over later on - regardless of the containing block. 
+    Some people call this var-scoping or function-scoping. Parameters are also function scoped.
+    
     
   #  Type Guards (typeguard.ts)
        # Working with union types
