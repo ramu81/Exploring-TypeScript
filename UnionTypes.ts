@@ -1,17 +1,33 @@
-/**
- * Takes a string and adds "padding" to the left.
- * If 'padding' is a string, then 'padding' is appended to the left side.
- * If 'padding' is a number, then that number of spaces is added to the left side.
- */
-function padLeft(value: string, padding: any) {
-    if (typeof padding === "number") {
-        return Array(padding + 1).join(" ") + value;
-    }
-    if (typeof padding === "string") {
-        return   value+'   '+padding;
-    }
-    throw new Error(`Expected string or number, got '${padding}'.`);
+interface Bird {
+    fly();
+    layEggs();
 }
 
-console.log(padLeft("Hello world", 4)); // returns "    Hello world"
-console.log(padLeft("Hello world", 'Ram')); // returns "    Hello world"
+interface Fish {
+    swim();
+    layEggs();
+}
+
+class Pigeon implements Bird {
+	layEggs(){ console.log('Pigeon.layEggs()'); }
+	fly(){ console.log('Pigeon.fly()'); }
+}
+
+class Salmon implements Fish {
+	layEggs(){ console.log('Salmon.layEggs()'); }
+	swim(){ console.log('Salmon.swim()'); }
+}
+
+const recive = function(flag: boolean): Fish | Bird {
+
+	if(flag)
+		return new Pigeon();
+	 else 
+		return new Salmon();	
+}
+
+recive(true).layEggs(); // okay
+recive(false).layEggs(); // okay
+
+(<Bird>recive(true)).fly();
+(<Fish>recive(false)).swim();

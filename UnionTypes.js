@@ -1,16 +1,24 @@
-/**
- * Takes a string and adds "padding" to the left.
- * If 'padding' is a string, then 'padding' is appended to the left side.
- * If 'padding' is a number, then that number of spaces is added to the left side.
- */
-function padLeft(value, padding) {
-    if (typeof padding === "number") {
-        return Array(padding + 1).join(" ") + value;
+var Pigeon = /** @class */ (function () {
+    function Pigeon() {
     }
-    if (typeof padding === "string") {
-        return value + '   ' + padding;
+    Pigeon.prototype.layEggs = function () { console.log('Pigeon.layEggs()'); };
+    Pigeon.prototype.fly = function () { console.log('Pigeon.fly()'); };
+    return Pigeon;
+}());
+var Salmon = /** @class */ (function () {
+    function Salmon() {
     }
-    throw new Error("Expected string or number, got '" + padding + "'.");
-}
-console.log(padLeft("Hello world", 4)); // returns "    Hello world"
-console.log(padLeft("Hello world", 'Ram')); // returns "    Hello world"
+    Salmon.prototype.layEggs = function () { console.log('Salmon.layEggs()'); };
+    Salmon.prototype.swim = function () { console.log('Salmon.swim()'); };
+    return Salmon;
+}());
+var recive = function (flag) {
+    if (flag)
+        return new Pigeon();
+    else
+        return new Salmon();
+};
+recive(true).layEggs(); // okay
+recive(false).layEggs(); // okay
+recive(true).fly();
+recive(false).swim();
