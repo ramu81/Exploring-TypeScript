@@ -61,4 +61,7 @@
     that is, being able to create a component that can work over a variety of types rather than a single one. 
     This allows users to consume these components and use their own types.
     
-    
+#  Intersection Types
+    An intersection type combines multiple types into one. This allows you to add together existing types to get 
+    a single type that has all the features you need. For example, Person & Serializable is a Person and 
+    Serializable. That means an object of this type will have all members of all two types.
