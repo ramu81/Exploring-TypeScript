@@ -68,3 +68,7 @@
     
     You will mostly see intersection types used for mixins and other concepts that don’t fit in the classic 
     object-oriented mold. 
+    
+#   Union Types (UnionTypes.ts) 
+      Union types are closely related to intersection types, but they are used very differently. 
+      Occasionally, you’ll run into a library that expects a parameter to be either a number or a string.
