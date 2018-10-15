@@ -1,5 +1,8 @@
 # Exploring-TypeScript
+ 
  # Preface 
+     -> TypeScript is a very well-planned type system that has type inference, structural subtyping, generic types,
+    contextual typing, intersection types, literal types, union types, etc. 
     -> TypeScript is a structural type system. When we compare two different types, 
     regardless of where they came from, if the types of all members are compatible, 
     then we say the types themselves are compatible
