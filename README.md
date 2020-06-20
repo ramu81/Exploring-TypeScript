@@ -11,6 +11,112 @@
     or global scope - regardless of the containing block. Some people call this var-scoping or function-scoping. 
     Parameters are also function scoped.
     
+    tsc -t ES6 --outDir build --noEmitOnError src/fileName.ts
+    
+    * Java Script ==> is one of the ubiquitous language
+
+* Ananmous function or arrow function or lambda expression which depends on external state,
+which is called clouser. The clouser should be immutable. 
+
+* Type System and Data Types (A very important aspect of every programming language)
+
+* JavaScript is a dynamically typed language (some extensions exist that support strict typing, such as TypeScript)
+
+* JavaScript has a pretty basic typeof operator for the purpose of type-checking.
+
+* Prior to ES6, JavaScript had 6 data types. In the ES6 specification, the Symbol type was added. Here is a list of all the types: 1. String 2. Number 3. Boolean 4. null 5. undefined 6. Symbol 7. Object
+
+* You may begin to wonder.what about arrays, functions, regular expressions, etc?
+
+* typeof  :  The typeof operator in JavaScript is a unary operator that evaluates to a string indicating the type of its operand.
+
+* Block scoped variables : in ES6, block-scoped variables declared using the "let" or "const" keywords will still throw a ReferenceError if they are used with the typeof operator before they are initialized. This is because: Block scoped variables remain in the temporal dead zone until they are initialized.
+
+* The NaN value has a very special characteristic. It is the only JavaScript value that is never equal to any other value by comparison, including itself.
+
+* Typing ==> static typing. statically & weakly typed language.
+
+* Type Inferance : Static typing does not mean we have to type in the type details all the time
+
+* Declare before use : TypeScript handles well the situation of undeclared variables
+
+* Ambient Variables : lexical scope , What good are rules if there are no exceptions
+
+* TypeScript have function declaraion overloding, not the function implementation.
+
+* Equality : Equality is a mess in JavaScript, how does TypeScript measure up in that area?
+
+* Equality and const : TypeScript has some surprises when dealing with const and equality
+
+* Type Compatibility : TypeScript has some special rules for type cmpatibility
+
+* Optional parameters : We take a look at optional parameters and compare it with default parameters
+
+* rest parameters : The ES 6 rest operator shines well in TypeScript too, with a type
+
+* spread operator
+
+* Declaring a callback : The interplay of callbacks and type specification
+
+* Creating a Lambda : Let's explore lambas, with types and such
+	# let's start with a function
+	# convert this function to a lambda
+	# beaware of scoping 
+	# regular functions
+		@ all variables are lexical scope
+		@ this will be dynamic scope
+	# lambda exceptions
+		@ everthing is lexical scoped
+
+* Using Lambda expressions : We learn to use higher-order functions in TypeScript
+	# lambda extension
+	# ananymous function
+	# highly concice
+	# low cerymony 
+	# less noise
+	# Filter
+	# Map
+	# Reduce
+	
+* Lexical Scoping : Regular functions and lambdas use different scoping
+	# scoping
+	# Lexical Scoping
+	# regular functions & scope
+	# but this
+	# lambda & scope
+	
+* Returning Lambdas : Oh that scope, when we return lambdas
+	# we can return functions
+	# we may return lambdas ?
+	# what about scope ?
+	
+* Interfaces : While JavaScript has no such concept, TypeScript makes good use of interfaces
+	# Useful to express intention
+	# interfaces in other languages
+	# TypeScript Interface
+	# creating an interface
+	# properties
+	# methods
+	# implementing
+	
+* Optional Properties : One of the most charming features of interfaces, optional properties
+	# interfaces for enforcement 
+	# if you don't care about particularly about a property
+	# properties may be optional
+	# let's explore with an example
+	
+* Structural Mapping : One of the coolest features of TypeScript that makes possible to interoperate with JavaScript that has no interfaces
+	# very intersting & useful feature
+	# implementing an interface
+	# structural mapping
+	# using structural mapping
+	
+* Callbacks Revisited : We see how interfaces help define callbacks more elegantly
+	# writing a function with callback
+	# writing once ok, write multiple times
+	# interfaces to the rescue
+	# but wait's what the method name?
+	# ah, a nice trick
     
   #  Type Guards (typeguard.ts)
        # Working with union types
